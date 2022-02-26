@@ -23,12 +23,42 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.navbar{
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 9 !important;
+}
+/* .page-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+} */
 
 .App-link {
   color: #61dafb;
 }
+.dashboard {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 623px;
+}
+.searchbox {
+  padding: 20px;
+}
+.conatin {
+  display: flex;
+  flex-direction: row;
+}
 
-@keyframes App-logo-spin {
+@media screen and (max-width:1024px){
+  .conatin {
+    display: flex;
+    flex-direction: column;
+  }
+  .post {
+      width: 90%;
+}}@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
